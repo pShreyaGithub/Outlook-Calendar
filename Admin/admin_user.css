@@ -1,0 +1,150 @@
+/* User Permission  Section Style Start Here*/
+
+.main-section{
+    position: absolute;
+    background: #ffffff;
+    min-height: 74vh;
+    top: -100px;
+    left: 69px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  .container1 {
+    position: absolute;
+    width: 95%;
+    margin: 36px;
+    margin-top: 3%;
+    margin-left: 3%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    top: 150px; /* Adjust this value according to your header height */
+}
+
+.user{
+   display: flex;
+  }
+  .button1 {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 68px; /* Adjust as needed */
+    padding: 10px 20px;
+    background-color: #e6990b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #d4d8dc;
+}
+
+@media screen and (max-width: 768px) {
+    .button1 {
+        position: static;
+        margin: 0 auto;
+    }
+}
+
+  
+  button:hover {
+    background-color: #0056b3; /* Darken color on hover */
+  }
+  .btn {
+    position: relative;
+    margin-left: 13px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #d4d8dc;
+    background-color: rgb(87, 216, 80); /* Green background color for Button 1 */
+}
+
+.btn-d {
+    position: relative;
+    margin-left: 41px;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #d4d8dc;
+    background-color: crimson; /* Crimson background color for Button 2 */
+}
+
+.btn::after,
+.btn-d::after {
+    content: attr(data-tooltip); /* Use the value of data-tooltip attribute for the tooltip text */
+    display: none; /* Hide the tooltip by default */
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+.btn:hover::after,
+.btn-d:hover::after {
+    display: block; /* Show the tooltip on hover */
+}
+
+  .table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    margin-top: 33px;
+    background-color: transparent;
+}
+
+
+/* Modal Styles */
+.modal {
+  margin-top: 44px;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 2% auto; /* 10% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; /* Adjust width as needed */
+  max-width: 408px; /* Maximum width */
+  
+}
+
+/* Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+

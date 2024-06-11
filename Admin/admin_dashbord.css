@@ -1,0 +1,175 @@
+
+  /* Dashbord  style */
+  .main-section{
+    position: fixed;
+    background: #ffffff;
+    min-height: 74vh;
+    top: 55px;
+    left: 69px;
+    width: calc(100% - 78px);
+    transition: all 0.5s ease;
+    z-index: 2;
+  }
+  
+  .main {
+    display: flex;
+    flex-wrap: wrap; /* Allow elements to wrap to the next line on smaller screens */
+    justify-content: space-between; /* Distribute space between the elements */
+  }
+  
+  .data1, .data2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Allow the elements to grow to fill the space */
+    /* margin: 0 5px; Add margin between elements */
+     /* Limit maximum width of elements to prevent overlap on small screens */
+  }
+  
+  .data1 {
+    color: #ff5733;
+    margin-top: 3%;
+    max-width: 48%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; /* Allow the elements to grow to fill the space */
+    margin: 0 5px;
+    margin-left: 33px;
+    margin-bottom: 59px;
+  }
+  
+  .data2 {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    /* flex-grow: 1; Allow the elements to grow to fill the space */
+    margin: 0 5px;
+    color: #ff5733;
+    /* margin-top: 3%; */
+    display: flex;
+    justify-content: center;
+    max-width: 48%;
+    margin-bottom: 59px;
+  }
+  
+  h1 {
+    margin-top: 40px;
+  }
+  h4{
+    /* left: 10px; */
+    margin-left: 127px;
+  } 
+  
+  .mini_data {
+    background-color: #fdfdfd;
+    color: #000000;
+    margin-top: 87px;
+    width: 151px;
+    height: 170px;
+    margin-left: -233px;
+    border: 1px solid #0c0e10;
+    border-radius: 18px;
+  }
+  
+  .mini_data1 {
+    margin-left: 68px;
+    background-color: #fdfdfd;
+    color: #000000;
+    margin-top: 87px;
+    margin-right: -181px;
+    width: 151px;
+    height: 170px;
+    border: 1px solid #0c0e10;
+    border-radius: 18px;
+  }
+  
+  /* Profile Of User */
+  .profile-container1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 526px;
+    margin-top: 22px;
+  
+  }
+  
+  .profile-pic1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    margin-top: -22px;
+    margin-left: 16%;
+  }
+  
+  .profile-pic1 img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+  }
+  
+  .names {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-right: 493px;
+    margin-top: -42px;
+  }
+  #role {
+    color: #ffffff;
+    background-color: #0c2c83;
+    border-radius: 10px;
+    width: fit-content; /* Adjust as needed */
+    padding: 5px 10px; /* Adjust as needed */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0c0e10;
+}
+/* CSS for Admin Details Table */
+.admin-details-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.admin-details-table th,
+.admin-details-table td {
+  border: 1px solid #000000; /* Set border color to black */
+  padding: 8px;
+  text-align: left;
+  color: #000000; /* Set text color to black */
+}
+
+.admin-details-table th {
+  background-color: #f2f2f2;
+}
+
+.admin-details-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-details-table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.admin-role .highlight {
+  font-weight: bold; /* Make text bold */
+  color: #000000; /* Set text color to black */
+}
+
+.role-icon {
+  display: inline-block; /* Ensure proper alignment with the role text */
+  vertical-align: middle; /* Align icon vertically with the text */
+  margin-right: 5px; /* Add margin between the icon and text */
+}
+
+

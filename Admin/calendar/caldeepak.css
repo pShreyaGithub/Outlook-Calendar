@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    font-family:"Open Sans";
+  }
+.year{
+    margin-top: 62px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+/* .month{
+  margin-top: 62px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+} */
+.day{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #050404;
+}
+.pd-40{
+  padding: 40px !important;
+}

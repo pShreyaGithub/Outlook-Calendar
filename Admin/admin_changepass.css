@@ -1,0 +1,134 @@
+/* .main-section{
+  position: absolute;
+  background: #ffffff;
+  min-height: 74vh;
+  top: -100px;
+  left: 69px;
+  width: calc(100% - 78px);
+  transition: all 0.5s ease;
+  z-index: 2;
+ }
+ 
+.container {
+    position: fixed;
+    width: 400px;
+    height: 450px;
+    margin: 67px;
+    margin-left: 30%;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 10px;
+  }
+  
+  input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  } */
+
+  .containerr-wrapper {
+    max-width: 30%;
+    height: 400px;
+    min-width: 300px;
+    padding: 50px 30px 50px 30px;
+    margin: 50px auto;   
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 15px 35px rgba(50,50,93,.1),0 5px 15px rgba(0,0,0,.07);
+    margin-top: 100px;
+  }
+  
+  .input-group {
+    position:relative;  
+    top: 30px;
+  
+    & + .input-group {
+      margin-top: 30px;
+    }
+  }
+  
+  .label-text {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #999;
+    background-color: #fff;
+    z-index: 10;
+    transition: transform 150ms ease-out, font-size 150ms ease-out;
+  }
+  
+  .focused .label-text {
+    transform: translateY(-125%);
+    font-size: .75em;
+  }
+  
+  .input-field {
+    position: relative;
+    padding: 12px 0px 5px 0;
+    width: 100%;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 1px 0 0 #e5e5e5;
+    transition: box-shadow 150ms ease-out;
+    
+    &:focus {
+      box-shadow: 0 2px 0 0 blue;
+    }
+  }
+  
+  .input-field.filled {
+    box-shadow: 0 2px 0 0 lightgreen;
+  }
+  
+  .submit-button{
+    background: #5a98e9;
+    border: 1px solid #345fe2;
+    box-shadow: 0 3px 20px 0 rgba(90, 140, 233, 0.6);
+    border-radius: 100px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    width: 136px;
+    height: 40px;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    cursor: pointer;
+    margin-left: 191px;
+    margin-top: 95px;
+  }
+  .hd1{
+    margin-left: 109px;
+    font-size: 1.25rem;
+    line-height: inherit;
+  }
