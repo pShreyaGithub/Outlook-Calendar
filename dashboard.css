@@ -1,0 +1,337 @@
+body{
+    margin-top: 100px;
+    background-image: url(bg.jpg);
+}
+.content {
+    margin-top:60px;
+margin-left: 200px;
+padding: 20px;
+}
+.user-icon{
+border-radius:100px;
+width:15%;
+margin-left:25px;
+margin-top:20px;
+}
+.button-31 {
+    background-color: #222;
+    border-radius: 4px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Farfetch Basis", "Helvetica Neue", Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    max-width: 100px;
+    min-height: 44px;
+    min-width: 10px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 20px 8px;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    margin-left: 116px;
+    margin-top: 25px;
+  }
+  
+  .button-31:hover,
+  .button-31:focus {
+    opacity: .75;
+  }
+/* div.user-info{
+align-items: center;
+margin-top:20px;  
+text-align: center; 
+} */
+div.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 100px;
+}
+div.user-info h2,
+div.user-info p {
+    margin: 5px 0;
+    padding-bottom: 10px;
+    margin-bottom: 10px; /* Adjust spacing between elements */
+}   
+/* .user-info h2{
+font-size: 2rem;
+width: 100px;
+text-align: center;
+margin: auto;
+}  */
+.user-info img{
+background-size: cover;
+width: 100px;
+padding-bottom: 30px;
+}
+.grid-container {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 30px;
+grid-column-gap: 10px;
+margin-bottom: 20px;
+margin-right: -222px;
+justify-content: center; /* Center the grid horizontally */
+}
+
+.lists{
+    background-color: #674527;
+    padding: 8px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: -6%;
+    height: 100%;
+    color: black;
+}
+.grid-item1 {
+background-color: #674527;
+padding: 10px; /* Reduce padding */
+text-align: center;
+border-radius: 10px;
+width: 40%; /* Adjust width */
+margin-left: 50%; /* Center the grid-item within the grid */
+}
+.grid-item2 {
+background-color: #674527;
+padding: 10px; /* Reduce padding */
+text-align: center;
+border-radius: 10px;
+width: 40%; /* Adjust width */
+margin-left: 21%; /* Center the grid-item within the grid */
+}
+.grid-item3 {
+    background-color: #674527;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 71%;
+    margin-top: -9%; /* Center the grid-item within the grid */
+}
+.grid-item4 {
+    background-color: #674527;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 120%;
+    margin-top: -9%;
+}
+#animal {
+position: fixed;
+z-index:9999;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: auto;
+background-color: rgba(0, 0, 0, 0.5);
+display: none;
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 88%;
+    max-width: 403px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    top: 293px;
+    text-align: justify;
+    right: 30%;
+}
+
+.close {
+    color: #000000;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 3px;
+
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+.input-field {
+width: 100%;
+padding: 10px;
+margin: 5px 0;
+box-sizing: border-box;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+
+.input-field:focus {
+outline: none;
+border-color: dodgerblue;
+}
+
+.checkbox-wrapper-54 input[type="checkbox"] {
+visibility: hidden;
+display: none;
+}
+
+.checkbox-wrapper-54 *,
+.checkbox-wrapper-54 ::after,
+.checkbox-wrapper-54 ::before {
+box-sizing: border-box;
+}
+
+/* The switch - the box around the slider */
+.checkbox-wrapper-54 .switch {
+--width-of-switch: 3.5em;
+--height-of-switch: 2em;
+/* size of sliding icon -- sun and moon */
+--size-of-icon: 1.4em;
+/* it is like a inline-padding of switch */
+--slider-offset: 0.3em;
+position: relative;
+width: var(--width-of-switch);
+height: var(--height-of-switch);
+display: inline-block;
+}
+
+/* The slider */
+.checkbox-wrapper-54 .slider {
+position: absolute;
+cursor: pointer;
+top: 4px;
+left: -31px;
+right: 0;
+bottom: 0;
+background-color: #f4f4f5;
+transition: .4s;
+border-radius: 30px;
+width: 48px;
+height: 26px;
+border: 1px solid black;
+}
+
+.checkbox-wrapper-54 .slider:before {
+position: absolute;
+content: "";
+border-radius: 20px;
+left: var(--slider-offset,0.3em);
+top: 50%;
+transform: translateY(-50%);
+background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+transition: .4s;
+}
+.checkbox-wrapper-54 .slider:after {
+position: absolute;
+content: "";
+border-radius: 20px;
+left: var(--slider-offset, 0.3em);
+top: 50%;
+transform: translateY(-35%);
+background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+transition: .4s;
+margin-block: -6px;
+}
+.checkbox-wrapper-54 input:checked + .slider {
+background-color: #303136;
+
+}
+
+.checkbox-wrapper-54 input:checked + .slider:before {
+/* left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em))); */
+background: #303136;
+/* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+margin-block: -7px;
+left: 2px;
+}
+.home-section1 {
+    position: fixed;
+    background: #E4E9F7;
+    min-height: 120vh;
+    top: 32px;
+    left: 36px;
+    width: 100%;
+    transition: all 0.5s ease;
+    z-index: 2;
+    padding-top: 100px;
+}
+.sidebar.open ~ .home-section1{
+left: 250px;
+width: calc(100% - 250px);
+}
+.home-section1 .text{
+display: inline-block;
+color: #11101d;
+font-size: 25px;
+font-weight: 500;
+margin: 18px
+}
+
+.home-section1[data-theme="sky"] {
+background-image: url(bg.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+.home-section1[data-theme="pink"] {
+background-image: url(bg2.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+
+
+.home-section1[data-theme="blue"] {
+background-image: url(bg3.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+color: white;
+}
+
+/* Theme style*/
+.theme-switch-wrapper {
+display: flex;
+align-items: center;
+margin-right: -23px;
+margin-bottom: -11px;
+}
+
+.dark-theme {
+    background-color: #333;
+    color: #fff;
+}
+
+.in-transition {
+    transition: background-color 1s;
+}
+
+.theme-switch {
+display: inline-block;
+height: 22px;
+position: relative;
+width: 50px;
+}
+
+.theme-switch input {
+display:none;
+}

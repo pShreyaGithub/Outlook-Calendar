@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+*{
+    box-sizing: border-box;
+    font-family:"Open Sans";
+  }
+html, body {
+  height: 100%;
+  }
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Open Sans";
+  color: #DCD7C9;
+}
+
+.group{
+&:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Styles for different screen sizes */
+
+/* Mobile View */
+@media screen and (max-width: 600px) {
+  .calendar-wrapper {
+    width: 100%;
+    margin: 20px;
+    padding: 1em;
+    overflow-x: auto;
+  }
+  
+  body {
+    font-size: 14px;
+  }
+  
+  td {
+    height: 40px;
+    font-size: 0.8em;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .calendar-wrapper {
+    width: 70%;
+    margin: 50px auto;
+  }
+}
+
+/* Laptop View */
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .calendar-wrapper {
+    width: 50%;
+    margin: 100px auto;
+  }
+}
+
+/* Desktop View */
+@media screen and (min-width: 1441px) {
+  .calendar-wrapper {
+    width: 40%;
+    margin: 150px auto;
+  }
+}
+
+/* Common Calendar Styles */
+.calendar-wrapper {
+  width: 400px;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 150px;
+  padding: 2em;
+  /* background: linear-gradient(to left, #9796f0 23%, #fbc7d4 95%); */
+  box-shadow: 10px 13px 26px #3F4E4F;
+  border-radius: 5px;
+  color: #2C3639;
+  background: #f3ead1;
+}
+
+table {
+  clear: both;
+  width: 100%;
+  border: 1px solid #3F4E4F;
+  border-radius: 3px;
+  border-collapse: collapse;
+  color: rgb(0, 0, 0);
+}
+
+td {
+  height: 48px;
+  text-align: center;
+  vertical-align: middle;
+  border-right: 1px solid #3F4E4F;
+  border-top: 1px solid #3F4E4F;
+  width: calc(100% / 7);
+}
+
+td.not-current {
+  color: #94716b;
+}
+
+td.today {
+  font-weight: 700;
+  color: #3F4E4F;
+  background-color: #DCD7C9;
+  font-size: 1.5em;
+}
+
+thead td {
+  border: none;
+  color: #292e49;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+
+#btnPrev,
+#btnNext {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  color: #00607d;
+  cursor: pointer;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+#btnPrev:before {
+  font-family: "Open Sans";
+  padding-right: 4px;
+}
+
+#btnNext:after {
+  font-family: "Open Sans";
+  padding-left: 4px;
+}
+
+#btnPrev:hover,
+#btnNext:hover {
+  color: rgb(40, 40, 59);
+  font-weight: bold;
+}

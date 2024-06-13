@@ -1,0 +1,52 @@
+#eventDate{
+    color: #080808;
+    font-weight: 400;
+    outline: none;
+    width: 320px;
+    border: none;
+    transition: all 0.5s ease;
+    background:#bdaa8d;
+    padding: 15px;
+    margin-bottom: -17px;
+  }
+  
+  #content{
+    background-color: #f7f2f2;
+    margin: auto;
+    padding: 11px;
+    border: 1px solid #888;
+    width: 27%;
+    height: 501px
+  }
+  
+  
+  
+  .event-day {
+    background-color: #bdaa8d; /* Light red color for event days */
+  }
+  /* Hover effect for #eventDate, #title, #description, #start_time, #end_time, #location, #members */
+#eventDate:hover,
+#title:hover,
+#description:hover,
+#start_time:hover,
+#end_time:hover,
+#location:hover,
+#members:hover {
+    background-color: #a8a28d; /* Darker shade for hover effect */
+    color: #ffffff; /* White text for better contrast */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+/* Hover effect for #add button */
+#add:hover {
+    background-color: #a8a28d; /* Darker shade for hover effect */
+    color: #ffffff; /* White text for better contrast */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
+
+/* Hover effect for .event-day */
+.event-day:hover {
+    background-color: #a8a28d; /* Darker shade for hover effect */
+    color: #ffffff; /* White text for better contrast */
+    cursor: pointer; /* Changes the cursor to a pointer when hovering */
+}
